@@ -37,8 +37,8 @@ function App() {
   };
 
   useEffect(() => {
-    window.localStorage.setItem("contacts", JSON.stringify(visibleContacts));
-  }, [visibleContacts]);
+    window.localStorage.setItem("contacts", JSON.stringify(contacts));
+  }, [contacts]);
 
   return (
     <div>

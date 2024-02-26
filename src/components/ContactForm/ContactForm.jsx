@@ -19,12 +19,12 @@ export default function ContactForm({ newContact }) {
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
-      .min(2, "Name is too long Short!")
-      .max(50, "Name is too Long!")
+      .min(3, "Minimum number of characters - 3!")
+      .max(50, "The maximum number of characters is 50!")
       .required("This field is required!"),
     number: Yup.string()
-      .min(2, "Phone number is too Short!")
-      .max(7, "Phone number is too long Long!")
+      .min(3, "Minimum number of characters - 3!")
+      .max(50, "The maximum number of characters is 50!")
       .required("This field is required!"),
   });
 
